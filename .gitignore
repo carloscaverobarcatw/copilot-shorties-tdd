@@ -24,3 +24,5 @@ hs_err_pid*
 replay_pid*
 
 /.idea/
+/score_keeper/elixir/_build/
+/score_keeper/python/tests/__pycache__/
