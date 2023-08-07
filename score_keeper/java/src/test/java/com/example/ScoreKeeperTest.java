@@ -29,13 +29,9 @@ public class ScoreKeeperTest {
     // Test that the score is 000:000 when the game starts
     @Test
     public void shouldReturn000000AsScoreWhenGameStarts() {
-        // Arrange
+
         ScoreKeeper scoreKeeper = new ScoreKeeper();
-
-        // Act
         String score = scoreKeeper.getScore();
-
-        // Assert
         assertEquals("000:000", score);
     }
 }
