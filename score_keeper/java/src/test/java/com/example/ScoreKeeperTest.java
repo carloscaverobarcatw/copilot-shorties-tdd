@@ -44,4 +44,13 @@ public class ScoreKeeperTest {
         assertEquals("001:000", score);
     }
 
+    @Test
+    public void shouldReturn002000AsScoreWhenTeamAScores2Points() {
+
+        ScoreKeeper scoreKeeper = new ScoreKeeper();
+        scoreKeeper.scoreTeamA2();
+        String score = scoreKeeper.getScore();
+        assertEquals("002:000", score);
+    }
+
 }

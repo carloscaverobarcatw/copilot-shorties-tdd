@@ -10,7 +10,11 @@ public class ScoreKeeper {
     }
 
     public void scoreTeamA1() {
-        // increment score for team A by 1
         teamAScore += 1;
     }
+
+    public void scoreTeamA2() {
+        teamAScore += 2;
+    }
+
 }
