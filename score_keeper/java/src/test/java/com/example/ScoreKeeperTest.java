@@ -28,7 +28,7 @@ public class ScoreKeeperTest {
     // Start with a happy path test
     // Test that the score is 000:000 when the game starts
     @Test
-    public void testScoreIs000000WhenGameStarts() {
+    public void shouldReturn000000AsScoreWhenGameStarts() {
         // Arrange
         ScoreKeeper scoreKeeper = new ScoreKeeper();
 
