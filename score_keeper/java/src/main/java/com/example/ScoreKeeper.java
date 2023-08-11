@@ -23,8 +23,18 @@ package com.example;
 
 public class ScoreKeeper {
 
+    private Integer teamAPoints = 0;
 
     public String getScore() {
-        return "000:000";
+        return String.format("%03d:000", teamAPoints);
+    }
+
+    public void scoreTeamA1() {
+        //add 1 point to team A
+        addPointToTeamA(1);
+    }
+
+    private void addPointToTeamA(int i) {
+        teamAPoints += i;
     }
 }
