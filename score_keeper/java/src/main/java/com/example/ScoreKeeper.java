@@ -31,11 +31,7 @@ public class ScoreKeeper {
     }
 
     public void scoreTeamA1() {
-        addPointToTeamA(1);
-    }
-
-    private void addPointToTeamA(int i) {
-        teamAPoints += i;
+        teamAPoints += 1;
     }
 
     public void scoreTeamB1() {
