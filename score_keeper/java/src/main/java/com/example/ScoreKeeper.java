@@ -35,7 +35,23 @@ public class ScoreKeeper {
     }
 
     public void scoreTeamB1() {
-        // add point to team B
         teamBPoints += 1;
     }
+
+    public void scoreTeamA2() {
+        teamAPoints += 2;
+    }
+
+    public void scoreTeamB2() {
+        teamBPoints += 2;
+    }
+
+    public void scoreTeamA3() {
+        teamAPoints += 3;
+    }
+
+    public void scoreTeamB3() {
+        teamBPoints += 3;
+    }
+
 }
