@@ -23,4 +23,12 @@ public class ScoreKeeperTest {
         assertEquals("001:000", scoreKeeper.getScore());
     }
 
+    //Now we will test the first point scored by team B, which will result in a score of 000:001
+    @Test
+    public void shouldReturn000001ScoreWhenTeamBScoresFirstPoint() {
+        ScoreKeeper scoreKeeper = new ScoreKeeper();
+        scoreKeeper.scoreTeamB1();
+        assertEquals("000:001", scoreKeeper.getScore());
+    }
+
 }

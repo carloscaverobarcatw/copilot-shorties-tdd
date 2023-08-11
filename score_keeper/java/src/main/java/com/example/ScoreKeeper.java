@@ -24,17 +24,22 @@ package com.example;
 public class ScoreKeeper {
 
     private Integer teamAPoints = 0;
+    private Integer teamBPoints = 0;
 
     public String getScore() {
-        return String.format("%03d:000", teamAPoints);
+        return String.format("%03d:%03d", teamAPoints, teamBPoints);
     }
 
     public void scoreTeamA1() {
-        //add 1 point to team A
         addPointToTeamA(1);
     }
 
     private void addPointToTeamA(int i) {
         teamAPoints += i;
+    }
+
+    public void scoreTeamB1() {
+        // add point to team B
+        teamBPoints += 1;
     }
 }
