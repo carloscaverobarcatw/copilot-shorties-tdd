@@ -1,5 +1,7 @@
 package _go
 
+import "fmt"
+
 /*
    Implement the ScoreKeeper as a Senior Go Developer
 
@@ -22,6 +24,8 @@ package _go
 
 // create a struct called ScoreKeeper
 type ScoreKeeper struct {
+	//fields for scores for team A
+	scoreTeamA int
 }
 
 // create a constructor for ScoreKeeper
@@ -31,5 +35,10 @@ func NewScoreKeeper() ScoreKeeper {
 
 // create a method called getScore() that returns a string
 func (sk *ScoreKeeper) GetScore() string {
-	return "000:000"
+	//return the score string based on team A
+	return fmt.Sprintf("%03d:000", sk.scoreTeamA)
+}
+
+func (sk *ScoreKeeper) ScoreTeamA1() {
+	sk.scoreTeamA += 1
 }
