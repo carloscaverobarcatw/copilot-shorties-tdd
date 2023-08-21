@@ -26,6 +26,9 @@ import "fmt"
 type ScoreKeeper struct {
 	//fields for scores for team A
 	scoreTeamA int
+
+	//fields for scores for team B
+	scoreTeamB int
 }
 
 // create a constructor for ScoreKeeper
@@ -36,9 +39,21 @@ func NewScoreKeeper() ScoreKeeper {
 // create a method called getScore() that returns a string
 func (sk *ScoreKeeper) GetScore() string {
 	//return the score string based on team A
-	return fmt.Sprintf("%03d:000", sk.scoreTeamA)
+	return fmt.Sprintf("%03d:%03d", sk.scoreTeamA, sk.scoreTeamB)
 }
 
 func (sk *ScoreKeeper) ScoreTeamA1() {
 	sk.scoreTeamA += 1
+}
+
+func (sk *ScoreKeeper) ScoreTeamA2() {
+	sk.scoreTeamA += 2
+}
+
+func (sk *ScoreKeeper) ScoreTeamA3() {
+	sk.scoreTeamA += 3
+}
+
+func (sk *ScoreKeeper) ScoreTeamB1() {
+	sk.scoreTeamB += 1
 }
