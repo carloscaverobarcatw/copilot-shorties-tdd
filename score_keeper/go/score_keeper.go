@@ -57,3 +57,7 @@ func (sk *ScoreKeeper) ScoreTeamA3() {
 func (sk *ScoreKeeper) ScoreTeamB1() {
 	sk.scoreTeamB += 1
 }
+
+func (sk *ScoreKeeper) ScoreTeamB2() {
+	sk.scoreTeamB += 2
+}
