@@ -52,3 +52,11 @@ func TestScoreForAMatchWithTwoPointsTeamB(t *testing.T) {
 	actualScore := scoreKeeper.GetScore()
 	assert.Equal(t, expectedScore, actualScore)
 }
+
+func TestScoreForAMatchWithThreePointsTeamB(t *testing.T) {
+	scoreKeeper := NewScoreKeeper()
+	expectedScore := "000:003"
+	scoreKeeper.ScoreTeamB3()
+	actualScore := scoreKeeper.GetScore()
+	assert.Equal(t, expectedScore, actualScore)
+}
