@@ -28,3 +28,4 @@ replay_pid*
 /score_keeper/python/tests/__pycache__/
 /score_keeper/python/__pycache__/
 /score_keeper/java/.idea/
+/score_keeper/.vscode/
