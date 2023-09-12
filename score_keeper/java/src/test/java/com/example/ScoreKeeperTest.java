@@ -12,4 +12,12 @@ public class ScoreKeeperTest {
         String score = scoreKeeper.getScore();
         assertEquals("000:000", score);
     }
+
+    @Test
+    public void shouldReturn001000WhenTeamAScored1Point() {
+        ScoreKeeper scoreKeeper = new ScoreKeeper();
+        scoreKeeper.scoreTeamA1();
+        String score = scoreKeeper.getScore();
+        assertEquals("001:000", score);
+    }
 }

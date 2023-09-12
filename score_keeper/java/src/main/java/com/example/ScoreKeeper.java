@@ -29,7 +29,15 @@ package com.example;
 
 public class ScoreKeeper {
 
+    private int teamAScore = 0;
+
     public String getScore() {
-        return "000:000";
+        // return the score as a String
+        return String.format("%03d:000", teamAScore);
+    }
+
+    public void scoreTeamA1() {
+        // increment Team A score by 1
+        teamAScore += 1;
     }
 }
